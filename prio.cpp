@@ -1,5 +1,5 @@
-// C++ program for implementation of FCFS 
-// scheduling 
+//Class Scheduling using PRIORITY SCHEDULING - OS TERM PROJECT PROGRAMMING ASSIGNMENT
+
 #include<bits/stdc++.h> 
 using namespace std; 
 
@@ -52,7 +52,7 @@ void findavgTime(Process proc[], int n)
 
 	//Display processes along with all details 
 	cout << "\nProcesses "<< " Burst time "
-		<< " Waiting time " << " Turn around time\n"; 
+		<< " Waiting time " << " Turn around time\n\n"; 
 
 	// Calculate total waiting time and total turn 
 	// around time 
@@ -76,9 +76,6 @@ void priorityScheduling(Process proc[], int n)
 	// Sort processes by priority 
 	sort(proc, proc + n, comparison); 
 
-	cout<< "Order in which processes gets executed \n"; 
-	for (int i = 0 ; i < n; i++) 
-		cout << proc[i].pid <<" " ; 
 
 	findavgTime(proc, n); 
 } 
@@ -88,8 +85,8 @@ int main()
 { 
 	Process proc[] = {{2201, 3, 2}, {3401, 2, 3}, {1103, 1, 1}}; 
 	int n = sizeof proc / sizeof proc[0]; 
+	cout<<"Class Scheduling using Priority Scheduling Algorithm"<<endl;
 	priorityScheduling(proc, n); 
 	return 0; 
 } 
-
 
