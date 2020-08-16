@@ -44,8 +44,8 @@ Hence, the input is as follows:
 
 For priority FCFS, the data is as follows:
 
-| Process | Burst Time | Waiting Time | Turnaround Time |
-| :---: | :---: | :---: | :---: |
+| Process | Burst Time | Waiting Time | Turnaround Time | 
+| :---: | :---: | :---: | :---: | 
 | 2201 | 3 | 0 | 3 | 
 | 3401 | 2 | 3 | 5 |
 | 1103 | 1 | 5 | 6 |
@@ -59,8 +59,8 @@ From the averages provided, FCFS is the least efficient algorithm because the wa
 
 For SJF scheduling, the data is as follows:
 
-| Process ID | Arrival Time | Burst Time | Waiting Time | Turnaround Time |
-| :---: | :---: | :---: | :---: |
+| Process ID | Arrival Time | Burst Time | Waiting Time | Turnaround Time | 
+| :---: | :---: | :---: | :---: | 
 | 2201 | 1 | 3 | 0 | 3 |
 | 3401 | 2 | 2 | 0 | 0 |
 | 1103 | 3 | 1 | 0 | 0 |
@@ -74,7 +74,7 @@ From the averages provided, SJF is the most efficient algorithm because the wait
 
 For priority scheduling, the data is as follows:
 
-| Process | Priority | Burst Time | Waiting Time | Turnaround Time |
+| Process | Priority | Burst Time | Waiting Time | Turnaround Time | 
 | :---: | :---: | :---: | :---: |
 | 3401 | 1 | 2 | 0 | 2 |
 | 2201 | 2 | 3 | 2 | 5 |
