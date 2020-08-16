@@ -1,5 +1,4 @@
-/* Simple C++ program for implementation 
-of FCFS scheduling */
+//Class Scheduling using FIRST COME FIRST SERVE ALGORITHM - OS TERM PROJECT PROGRAMMING ASSIGNMENT
 
 #include<iostream>
 
@@ -43,7 +42,7 @@ void findAverageTime( int processes[], int n, int bt[])
     findTurnAroundTime(processes, n, bt, wt, tat);
  
     // display processes along with all details
-    cout << "Processes  "<< " Burst time  "<< " Waiting time  " << " Turn around time\n";
+    cout << "Processes  "<< " Burst time  "<< " Waiting time  " << " Turn around time\n\n";
  
     // calculate total waiting time and total turn around time
     for (int i = 0; i < n; i++)
@@ -53,7 +52,7 @@ void findAverageTime( int processes[], int n, int bt[])
         cout << "   " << processes[i] << "\t\t" << bt[i] <<"\t    "<< wt[i] <<"\t\t  " << tat[i] <<endl;
     }
  
-    cout << "Average waiting time = "<< (float)total_wt / (float)n;
+    cout <<endl<< "Average waiting time = "<< (float)total_wt / (float)n;
     cout << "\nAverage turn around time = "<< (float)total_tat / (float)n;
 }
  
@@ -66,6 +65,8 @@ int main()
  
     // burst time of all processes
     int  burst_time[] = {3,2,1};
+    
+    cout<<"Class Scheduling using First Come First Serve(FCFS) Algorithm"<<endl<<endl;
  
     findAverageTime(processes, n,  burst_time);
     
